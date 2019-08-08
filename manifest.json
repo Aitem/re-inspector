@@ -1,0 +1,20 @@
+{
+    "name": "DevToolsPanel",
+    "version": "0.1",
+    "description": "A bare-bones example of communication between devtools and an inspected page",
+    "devtools_page": "devtools.html",
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "externally_connectable": {
+  "matches": ["http://localhost:3449/*"]
+},
+    "permissions": [
+        "tabs", 
+        "http://*/*",
+        "https://*/*"
+    ],
+    "manifest_version": 2
+}
