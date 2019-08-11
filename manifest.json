@@ -1,18 +1,19 @@
 {
-    "name": "DevToolsPanel",
-    "version": "0.1",
-    "description": "A bare-bones example of communication between devtools and an inspected page",
+    "name": "Re-Inspector",
+    "version": "0.0.1",
+    "description": "Re-frame inspector",
     "devtools_page": "devtools.html",
     "background": {
         "scripts": [
             "background.js"
         ]
     },
+    "web_accessible_resources" : ["/js/contentScript.js"],
     "externally_connectable": {
-  "matches": ["http://localhost:3449/*"]
+    "matches": ["http://localhost:3449/*"]
 },
     "permissions": [
-        "tabs", 
+        "tabs",
         "http://*/*",
         "https://*/*"
     ],
