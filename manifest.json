@@ -8,7 +8,7 @@
             "background.js"
         ]
     },
-    "web_accessible_resources" : ["/js/contentScript.js"],
+    "web_accessible_resources" : ["/js/app.js"],
     "externally_connectable": {
     "matches": ["http://localhost:3449/*"]
 },
